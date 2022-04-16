@@ -90,3 +90,7 @@ GET     http://localhost:8081/news/{id}
 PUT     http://localhost:8081/news/{id}
 DELETE  http://localhost:8081/news/{id}
 ```
+ - Api usage example file
+```
+bareksa.postman_collection.json
+```
