@@ -1,0 +1,253 @@
+{
+	"info": {
+		"_postman_id": "d97b936e-7c37-424d-8e66-1da814348dbb",
+		"name": "bareksa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "news",
+			"item": [
+				{
+					"name": "get news",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/news/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"news",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add news",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"topic\": \"investment\",\"title\": \"how to start investment\",\"content\": \"news content\",\"tags\": [{\"name\": \"tag 0\"},{\"name\": \"tag 1\"}]}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/news",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"news"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list news",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/news",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"news"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update news",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\": \"publish\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/news/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"news",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete news",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/news/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"news",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "tags",
+			"item": [
+				{
+					"name": "update tag",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\":\"test tag - updated name\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/tag/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"tag",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete tag",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/tag/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"tag",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add tag",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\":\"test tag\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/tag",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"tag"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get tag",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/tag/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"tag",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list tag",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/tags",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"tags"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
