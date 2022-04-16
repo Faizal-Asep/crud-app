@@ -130,6 +130,66 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "list news(filter by topic)",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"topic\":\"investment\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/news",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"news"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list news(filter by status)",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"status\":\"publish\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/news",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"news"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
